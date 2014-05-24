@@ -52,6 +52,9 @@ set wildmenu
 "タイプ途中のコマンドを画面最下行に表示
 set showcmd
 
+"クリップボードをとヤンクを共有
+set clipboard=unnamed,autoselect
+
 "検索語を強調表示
 set hlsearch
 
