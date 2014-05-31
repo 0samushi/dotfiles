@@ -1,5 +1,5 @@
 "カラースキーム
-colorscheme desert
+colorscheme molokai
 
 "Vi互換モードオフ
 set nocompatible
@@ -14,6 +14,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'Shougo/neocomplete.vim'
 Plugin 'Shougo/neosnippet.vim'
 Plugin 'Shougo/neosnippet-snippets'
+Plugin 'scrooloose/syntastic'
 
 call vundle#end()
 "ファイルタイププラグインを有効に
@@ -49,6 +50,20 @@ set hidden
 "コマンドライン補完を便利に
 set wildmenu
 
+"シンタックスチェック設定
+"let g:syntastic_enable_signs=1
+"let g:syntastic_auto_loc_list=2
+"let g:syntastic_mode_map = {'mode' : 'passive'}
+"augroup AutoSyntastic
+"  autocmd!
+"  autocmd InsertLeave, TextChanged * call s:syntastic()
+"augroup END
+"function! s:syntastic()
+"  w
+"  SyntasticCheck
+"endfunction
+
+
 "タイプ途中のコマンドを画面最下行に表示
 set showcmd
 
@@ -61,6 +76,9 @@ set hlsearch
 "検索時に大文字・小文字を区別しない
 set ignorecase
 set smartcase
+
+"0前置を8進数とみなさない
+set nrformats=
 
 "オートインデント、改行、インサートモード開始直後にバックスペースキーで削除できるようにする
 set backspace=indent,eol,start
