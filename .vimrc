@@ -5,6 +5,10 @@ filetype plugin indent off
 "カラースキーム
 colorscheme molokai
 
+"背景黒であることを主張
+set background=light
+set background=dark
+
 "Vi互換モードオフ
 set nocompatible
 
