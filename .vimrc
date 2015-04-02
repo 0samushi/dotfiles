@@ -12,7 +12,7 @@ set background=dark
 "Vi互換モードオフ
 set nocompatible
 
-set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=~/.vim/bundle/vundle
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'Shougo/neocomplete.vim'
@@ -140,9 +140,10 @@ set notimeout ttimeout ttimeoutlen=200
 set pastetoggle=<F11>
 
 "タブの代わりにスペース２個使う
+set tabstop=2
 set shiftwidth=2
-set softtabstop=2
 set expandtab
+set softtabstop=2
 
 
 "日本語関連の設定
